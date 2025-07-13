@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #1f1f1f;
+  color: white;
+  padding: 20px 0;
+}
+
+header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+}
+
+header h1 {
+  font-size: 28px;
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.hero {
+  background: url('hero.jpg') no-repeat center center/cover;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
+
+.hero-content {
+  background-color: rgba(0,0,0,0.6);
+  padding: 30px;
+  border-radius: 10px;
+}
+
+.hero h2 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background-color: #ff4757;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  text-decoration: none;
+  border-radius: 25px;
+  font-size: 16px;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #e84118;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 60px 10%;
+  background-color: white;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  width: 30%;
+  min-width: 250px;
+  margin: 10px;
+  padding: 20px;
+  background: #fafafa;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.about {
+  display: flex;
+  padding: 60px 10%;
+  background-color: #f9f9f9;
+  flex-wrap: wrap;
+}
+
+.about-image {
+  flex: 1;
+  min-width: 250px;
+  text-align: center;
+}
+
+.about-image img {
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+.about-text {
+  flex: 2;
+  padding: 20px;
+}
+
+.contact {
+  background-color: #1f1f1f;
+  color: white;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+@media (max-width: 768px) {
+  .features, .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .feature-box {
+    width: 80%;
+  }
+}
